@@ -1,0 +1,43 @@
+# Playbook para instalar VS Code, git, python3-pip, ansible y ansible-lint en CentOS/RHEL
+- name: Instalar Visual Studio Code, git, python3-pip, ansible y ansible-lint
+  hosts: all
+  become: yes
+  tasks:
+    - name: Importar clave GPG de Microsoft
+      rpm_key:
+        state: present
+        key: https://packages.microsoft.com/keys/microsoft.asc
+
+    - name: Agregar repositorio de VS Code
+      copy:
+        dest: /etc/yum.repos.d/vscode.repo
+        content: |
+          [code]
+          name=Visual Studio Code
+          baseurl=https://packages.microsoft.com/yumrepos/vscode
+          enabled=1
+          gpgcheck=1
+          gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+        owner: root
+        group: root
+        mode: '0644'
+
+    - name: Actualizar lista de paquetes
+      yum:
+        update_cache: yes
+
+    - name: Instalar VS Code, git, python3-pip y ansible
+      yum:
+        name:
+          - code
+          - git
+          - python3-pip
+          - ansible
+        state: present
+
+    - name: Instalar ansible-lint con pip3 para el usuario actual
+      pip:
+        name: ansible-lint
+        executable: pip3
+        extra_args: --user
+        state: present

@@ -10,13 +10,14 @@
         "github.copilot",
         "hashicorp.terraform",
         "redhat.ansible",
-        "ms-python.python"
+        "ms-python.python",
+        "Equinusocio.vsc-material-theme"
       ],
       "settings": {
         "editor.minimap.enabled": false,
         "editor.detectIndentation": true,
         "editor.insertSpaces": false,
-        "workbench.colorTheme": "Night Owl",
+        "workbench.colorTheme": "Material Theme Palenight High Contrast",
         "window.commandCenter": false,
         "editor.lineNumbers": "on",
         "editor.stickyScroll.enabled": false,

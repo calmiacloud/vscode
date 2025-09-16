@@ -1,5 +1,5 @@
 {
-  "name": "gitpod-vscode",
+  "name": "vscode",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -38,6 +38,5 @@
         "ansible.validation.lint.enabled": false
       }
     }
-  },
-  "postCreateCommand": "python3 --version && node --version && terraform -version && ansible --version"
+  }
 }

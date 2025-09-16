@@ -11,13 +11,14 @@
         "hashicorp.terraform",
         "redhat.ansible",
         "ms-python.python",
-        "Equinusocio.vsc-material-theme"
+        "Equinusocio.vsc-material-theme",
+        "monokai.theme-monokai-pro-vscode"
       ],
       "settings": {
         "editor.minimap.enabled": false,
         "editor.detectIndentation": true,
         "editor.insertSpaces": false,
-        "workbench.colorTheme": "Material Theme Palenight High Contrast",
+        "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
         "window.commandCenter": false,
         "editor.lineNumbers": "on",
         "editor.stickyScroll.enabled": false,

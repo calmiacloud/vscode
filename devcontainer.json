@@ -1,0 +1,18 @@
+{
+	"customizations": {
+		"codespaces": {
+			"openFiles": [
+				"README.md"
+			]
+		},
+		"vscode": {
+			"extensions": [
+				"HashiCorp.terraform",
+				"zehfernando.theme-actual-obsidian",
+				"GitHub.vscode-github-actions",
+				"redhat.ansible"
+			]
+		}
+	},
+	"postCreateCommand": "/bin/bash ./.devcontainer/postCreateCommand.sh"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "gitpod-vscode",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "sdras.night-owl",
+        "github.copilot",
+        "hashicorp.terraform",
+        "redhat.ansible",
+        "ms-python.python"
+      ],
+      "settings": {
+        "editor.minimap.enabled": false,
+        "editor.detectIndentation": true,
+        "editor.insertSpaces": false,
+        "workbench.colorTheme": "Night Owl",
+        "window.commandCenter": false,
+        "editor.lineNumbers": "on",
+        "editor.stickyScroll.enabled": false,
+        "editor.wordWrap": "on",
+        "files.autoSave": "onWindowChange",
+        "workbench.editorAssociations": {
+          "*.md": "vscode.markdown.preview.editor",
+          "*.MD": "vscode.markdown.preview.editor"
+        },
+        "workbench.sideBar.location": "left",
+        "workbench.statusBar.visible": true,
+        "workbench.tree.enableStickyScroll": true,
+        "workbench.view.alwaysShowHeaderActions": false,
+        "window.density.editorTabHeight": "default",
+        "git.autofetch": false,
+        "git.enableSmartCommit": true,
+        "git.postCommitCommand": "sync",
+        "ansible.python.interpreterPath": "/home/codespace/.python/current/bin/python3",
+        "ansible.validation.lint.enabled": false
+      }
+    }
+  },
+  "postCreateCommand": "python3 --version && node --version && terraform -version && ansible --version"
+}

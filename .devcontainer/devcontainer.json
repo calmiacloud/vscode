@@ -3,7 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "workspaceFolder": "/workspaces/code",
+  "workspaceFolder": "code",
   "customizations": {
     "vscode": {
       "extensions": [

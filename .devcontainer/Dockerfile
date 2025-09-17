@@ -18,3 +18,6 @@ RUN add-apt-repository --yes --update ppa:ansible/ansible \
 
  # Git
 RUN git config --global commit.template /workspaces/vscode/.devcontainer/.gitmessage.txt
+
+# Disable Git on vscode repo
+RUN rm -rf /workspaces/vscode/.git

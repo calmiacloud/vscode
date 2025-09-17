@@ -15,6 +15,3 @@ RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor > /usr/sha
 # Ansible
 RUN add-apt-repository --yes --update ppa:ansible/ansible \
  && apt-get install -y ansible
-
- # Git
-RUN git config --global commit.template /workspaces/vscode/.devcontainer/.gitmessage.txt

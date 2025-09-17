@@ -48,5 +48,5 @@
       }
     }
   },
-  "postCreateCommand": "rm -rf /workspaces/vscode/.git"
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh"
 }

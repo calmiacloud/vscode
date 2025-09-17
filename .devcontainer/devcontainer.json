@@ -3,6 +3,9 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "mounts": [
+    "secret:SSH_KEY:/home/vscode/.ssh/id_ed25519"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [

@@ -22,4 +22,3 @@ RUN git config --global commit.template /workspaces/vscode/.devcontainer/.gitmes
 
 # Worskspace folder
 RUN mkdir -p /workspaces/vscode/code
-WORKDIR /workspaces/vscode/code

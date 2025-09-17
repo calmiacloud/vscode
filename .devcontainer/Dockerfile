@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 
 RUN apt-get update \
- && apt-get install -y curl gnupg software-properties-common python3 python3-pip
+ && apt-get install -y git openssh-client curl gnupg software-properties-common python3 python3-pip
 
 # Node.js (LTS)
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \

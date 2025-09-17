@@ -18,7 +18,7 @@
         "editor.minimap.enabled": false,
         "editor.detectIndentation": true,
         "editor.insertSpaces": false,
-        "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+        "workbench.colorTheme": "Material Theme Palenight High Contrast",
         "window.commandCenter": false,
         "editor.lineNumbers": "on",
         "editor.stickyScroll.enabled": false,

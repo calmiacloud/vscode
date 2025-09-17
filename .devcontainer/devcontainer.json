@@ -40,7 +40,7 @@
         "ansible.python.interpreterPath": "/home/codespace/.python/current/bin/python3",
         "ansible.validation.lint.enabled": false,
         "files.exclude": {
-          "/.devcontainer": true,
+          "**/.devcontainer": true,
           "/README.md": true
         }     
       }

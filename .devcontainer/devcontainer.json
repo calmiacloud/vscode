@@ -41,7 +41,7 @@
         "ansible.validation.lint.enabled": false,
         "files.exclude": {
           "**/.devcontainer": true,
-          "*/README.md": true
+          "README.md": true
         }     
       }
     }

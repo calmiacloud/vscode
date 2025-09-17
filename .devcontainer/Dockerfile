@@ -17,8 +17,4 @@ RUN add-apt-repository --yes --update ppa:ansible/ansible \
  && apt-get install -y ansible
 
  # Git
-
 RUN git config --global commit.template /workspaces/vscode/.devcontainer/.gitmessage.txt
-
-# Worskspace folder
-RUN mkdir -p /workspaces/vscode/code

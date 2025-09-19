@@ -39,6 +39,7 @@
         "git.openRepositoryInParentFolders": "never",
         "ansible.python.interpreterPath": "/home/codespace/.python/current/bin/python3",
         "ansible.validation.lint.enabled": false,
+        "github.copilot.nextEditSuggestions.enabled": false,
         "files.exclude": {
           "**/.devcontainer": true,
           "README.md": true

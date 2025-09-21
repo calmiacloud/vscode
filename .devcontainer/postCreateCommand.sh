@@ -29,3 +29,8 @@ git config --global commit.template /workspaces/vscode/.devcontainer/.gitmessage
 # Github main repo disable git
 
 rm -rf /workspaces/vscode/.git 
+
+# Github uninstall default packages
+
+code --uninstall-extension GitHub.vscode-pull-request-github || true
+code --disable-extension GitHub.vscode-pull-request-github || true

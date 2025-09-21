@@ -43,7 +43,8 @@
         "extensions.unwantedRecommendations": ["ms-azuretools.vscode-docker"],
         "files.exclude": {
           "**/.devcontainer": true,
-          "README.md": true
+          "README.md": true,
+          ".prettierrc": true
         }
       }
     }
